@@ -26,6 +26,7 @@ public class test {
             return "";
         int len = str.length();
         String res = str + str;
+        System.out.println();
         return res.substring(n ,  len + n);
     }
    /* @Test
