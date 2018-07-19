@@ -10,6 +10,7 @@ class threadDemo extends Thread {
 
     ArrayList<test> list = new ArrayList<>();
     long count = 1;
+    @Override
     public void run() {
         System.out.println(Thread.currentThread().getName()+"----------------");
         while (count < 1000000) {
@@ -22,11 +23,12 @@ class threadDemo extends Thread {
 public class test {
 
     public String LeftRotateString(String str,int n) {
-        if (str == "" || str  == null || n < 0 )
+        if (str == "" || str  == null || n < 0 ) {
             return "";
+        }
         int len = str.length();
         String res = str + str;
-        System.out.println();
+        System.out.println("-----------------------,测试乙方修改内容");
         return res.substring(n ,  len + n);
     }
    /* @Test
