@@ -2,6 +2,8 @@ package com.wxy.graph;
 
 /**
  * Created by Kode on 2018/11/9.
+ *
+ * 图的邻接矩阵存储方式
  */
 public class MatrixGraph {
     // 通过下标映射元素值
